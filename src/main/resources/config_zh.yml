@@ -1,0 +1,37 @@
+text:
+  # 在此部分，您可以决定配送鹦鹉在每个状态下显示的所有消息
+  # 格式：
+  # %p = 鹦鹉名字
+  # %r = 接收者名字
+  # %s = 玩家名字
+  # 示例: "%p > %r, %s给你发送了一个物品"
+  # 也可以使用颜色代码
+
+  # 首次遇到鹦鹉
+  hello_message: "你好 %s，我需要交付什么？"
+
+  # 玩家没有时间给鹦鹉物品
+  time_expired_message: "%p > 嘿！我猜你没有什么要交付的，我先走了，再见！"
+
+  # 鹦鹉收到了要交付的物品
+  item_got_message: "%p > 谢谢，我现在就去交付这个物品"
+
+  # 鹦鹉开始将物品交付给指定的玩家
+  delivery_start_message: "%p > 嗨 %r，我有来自%s的东西给你"
+
+  # 鹦鹉已将物品交付给指定的玩家
+  delivery_done_message: "%p > 我已经完成我的工作，我现在要走了，再见！"
+
+# 在此部分，您可以添加和删除将随机分配给鹦鹉的名字
+parrot_names: [Joe, John, Jerome, Mike, Oliver, EMS, 顺丰快递, 京东物流, 饿了么, 美团]
+
+# 如果你想增加召唤鹦鹉的费用，启用use_call_item并指定一个物品
+call_item: minecraft:diamond
+call_item_amount: 1
+use_call_item: false
+
+# 命令权限：
+# parrotletter.* | 访问基础命令的权限
+# parrotletter.send | 发送消息的权限
+# parrotletter.send.self | 给自己发送物品的能力
+# parrotletter.help | 访问帮助命令的权限
